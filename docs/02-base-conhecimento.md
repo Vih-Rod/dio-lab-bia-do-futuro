@@ -18,6 +18,23 @@
 
 Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl+ C, Ctrl+ V) ou carregar os arquivos via código.
 
+```python
+import panda as pd
+import json
+
+#CSVs
+historico - pd.read_csv('data/historico_atendimento.csv')
+transacoes - pd.read_csv('data/transacoes.csv')
+
+#JSONs
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+     perfil = json.load(f)
+
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+     produtos = json.load(f)
+
+```
+
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
