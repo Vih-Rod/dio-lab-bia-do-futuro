@@ -2,25 +2,12 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Para que serve no Professor Fortuna? |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
----
-
-## Adaptações nos Dados
-
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-[Sua descrição aqui]
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores, ou seja, dar continuidade no atendimento de forma mais eficiente.  |
+| `perfil_investidor.json` | JSON | Personalizar as explicações sobre as dúvidas e necessidades de aprendizado do cliente |
+| `produtos_financeiros.json` | JSON | Conhecer os produtos disponíveis para que elas possam ser ensinados ao cliente. |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didática.|
 
 ---
 
@@ -29,12 +16,20 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl+ C, Ctrl+ V) ou carregar os arquivos via código.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```text
+Dados do cliente: 
+
+Perfil do cliente:
+
+Transacoes do cliente:
+
+Produtos disponíveis para ensino:
+```
 
 ---
 
