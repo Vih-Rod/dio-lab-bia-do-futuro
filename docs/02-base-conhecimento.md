@@ -38,8 +38,10 @@ with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
+Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, garantindo que o Agente tenha o melhor contexto possível. Lembrando que em soluções mais robustas, o ideial é que essas informações sejam carregadas dinamicamente para que possamos ganhar flexibilidade.
+
 ```text
-DADOS DO CLIENTE E PERFIL: (data/perfil_investidor.json)
+DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
 {
   "nome": "João Silva",
   "idade": 32,
@@ -64,7 +66,7 @@ DADOS DO CLIENTE E PERFIL: (data/perfil_investidor.json)
   ]
 }
 
-TRANSACOES DO CLIENTE: (data/transacoes.csv)
+TRANSACOES DO CLIENTE (data/transacoes.csv):
 data,descricao,categoria,valor,tipo
 2025-10-01,Salário,receita,5000.00,entrada
 2025-10-02,Aluguel,moradia,1200.00,saida
@@ -77,7 +79,7 @@ data,descricao,categoria,valor,tipo
 2025-10-20,Academia,saude,99.00,saida
 2025-10-25,Combustível,transporte,250.00,saida
 
-HISTORICO DE ATENDIMENTO DO CLIENTE: (data/historico_atendimento.csv)
+HISTORICO DE ATENDIMENTO DO CLIENTE (data/historico_atendimento.csv):
 data,canal,tema,resumo,resolvido
 2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
 2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
@@ -85,7 +87,49 @@ data,canal,tema,resumo,resolvido
 2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
 2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
 
-PRODUTOS DISP0NIVEIS PARA ENSINO:
+PRODUTOS DISP0NIVEIS PARA ENSINO (data/produtos_financeiros.json):
+[
+  {
+    "nome": "Tesouro Selic",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "100% da Selic",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Reserva de emergência e iniciantes"
+  },
+  {
+    "nome": "CDB Liquidez Diária",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "102% do CDI",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Quem busca segurança com rendimento diário"
+  },
+  {
+    "nome": "LCI/LCA",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "95% do CDI",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+  },
+  {
+    "nome": "Fundo Multimercado",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "CDI + 2%",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Perfil moderado que busca diversificação"
+  },
+  {
+    "nome": "Fundo de Ações",
+    "categoria": "fundo",
+    "risco": "alto",
+    "rentabilidade": "Variável",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil arrojado com foco no longo prazo"
+  }
+]
 
 ```
 
