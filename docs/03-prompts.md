@@ -97,5 +97,4 @@ Professor Fortuna: Sou especializado em finanças e não tenho informações sob
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
-- [Observação 2]
+- Registramos que existem diferenças significativas no uso de diferentes LLMs. Exemplo: Ao usar o ChatGPT, Claude e Copilot tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu respostas em padrões distintos. Na prática, todos se sairam bem, mas o ChatGPT se perdeu no Edge Case de "Pergunta fora do escopo" (Qual a previsão de tempo para amanhã?).
