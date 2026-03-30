@@ -33,7 +33,7 @@ Regras:
 **Professor Fortuna:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu te explique a diferença entre os dois?"
 
 ---
-``
+```
 ### Cenário 2: Pergunta sobre seus próprios gastos 
 
 **Usuário:** "Onde estou gastando mais?"
