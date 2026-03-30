@@ -25,8 +25,8 @@ Regras:
 
 EXEMPLOS DE PERGUNTAS ()
 ```
-Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo os Conceitos Básicos](https://hub.asimov.academy/tutorial/zero-one-e-few-shot-prompts-entendendo-os-conceitos-basicos/)
-
+Mais sobre Few-Shot Prompts no artigo (https://hub.asimov.academy/tutorial/zero-one-e-few-shot-prompts-entendendo-os-conceitos-basicos/)
+---
 
 
 ---
