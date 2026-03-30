@@ -21,6 +21,12 @@ Regras:
 > [!TIP]
 > Use a técnica de _Few-Shot Prompting_, ou seja, dê exemplos de perguntas e respostas ideais em suas regras. Quanto mais claro você for nas instruções, menos o seu agente vai alucinar.
 
+[CONTEXTO: USO DA BASE DE CONHECIMENTO]
+
+EXEMPLOS DE PERGUNTAS ()
+```
+Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo os Conceitos Básicos](https://hub.asimov.academy/tutorial/zero-one-e-few-shot-prompts-entendendo-os-conceitos-basicos/)
+
 ---
 
 ## Exemplos de Interação
@@ -66,8 +72,6 @@ Regras:
 
 **Professor Fortuna:** Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?
 
-
----
 
 ---
 ### Solicitação de recomendação sem contexto
