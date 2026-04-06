@@ -48,8 +48,6 @@ Crie testes simples para validar seu agente:
 
 ---
 
----
-
 ## Métricas Avançadas (Opcional)
 
 Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
