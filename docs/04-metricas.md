@@ -48,16 +48,6 @@ Crie testes simples para validar seu agente:
 
 ---
 
-## Resultados
-
-Após os testes, registre suas conclusões:
-
-**O que funcionou bem:**
-- [Liste aqui]
-
-**O que pode melhorar:**
-- [Liste aqui]
-
 ---
 
 ## Métricas Avançadas (Opcional)
